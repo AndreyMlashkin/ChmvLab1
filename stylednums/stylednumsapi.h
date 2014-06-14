@@ -31,7 +31,10 @@ inline QVector<QString> stylesNames()
 {
     static QVector<QString> stylesNames;
     if(stylesNames.isEmpty())
-        stylesNames << "Арабские числа" << "Римские числа" << "Словестное представление" << "Символы";
+        stylesNames << QString::fromLocal8Bit("Арабские числа")
+                    << QString::fromLocal8Bit("Римские числа")
+                    << QString::fromLocal8Bit("Словестное представление")
+                    << QString::fromLocal8Bit("Символы");
     return stylesNames;
 }
 
