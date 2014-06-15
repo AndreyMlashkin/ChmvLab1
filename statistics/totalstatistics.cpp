@@ -4,7 +4,7 @@
 TotalStatistics::TotalStatistics()
     : Statistics()
 {
-    m_description << "Угаданно" << "Неугаданно";
+    m_description << QString::fromLocal8Bit("Угаданно") << QString::fromLocal8Bit("Неугаданно");
     m_statistics.resize(2);
 }
 
